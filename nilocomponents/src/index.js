@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import NiloButton from './components/NiloButton'
+import ScoreBoard from './components/ScoreBoard'
+import NiloCards from './components/NiloCards'
 
 ReactDOM.render(
   <React.StrictMode>
-    <NiloButton />
+    <NiloCards />
   </React.StrictMode>,
   document.getElementById('root')
 );
