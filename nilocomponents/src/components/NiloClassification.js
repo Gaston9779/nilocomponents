@@ -1,15 +1,20 @@
 import React from 'react'
-import { View, Button } from 'react-native'
-import LocalStorage from './LocalStorage.mjs'
+import { View, Text } from 'react-native'
+import LocalStorage from './LocalStorage'
+import _ from 'lodash'
 
 export default function NiloClassification() {
     const localStorage = new LocalStorage()
-    const classificationList = localStorage.getData()
+    const classificationList = localStorage.getData("users")
+    const orederedClassification = _.orderBy(classificationList, ['points', 'name'], ['desc', 'desc'])
     return (
         <>
-            <Button title="Aggiungi a local" onPress={localStorage.addData("users", {user: "test", password: "passw", points: 123})}/>
             <View>
-                {classificationList}
+                {orederedClassification.map(user => {
+                    return(
+                        <Text>{user.user} {user.points}</Text>
+                    )
+                })}
             </View>
         </>
     )
