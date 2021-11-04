@@ -5,11 +5,7 @@ import NiloButton from './NiloButton'
 const H = Dimensions.get( 'window' ).height
 const W = Dimensions.get( 'window' ).width
 
-
 const ScoreBoard = (props) => {
-
-    
-
     return (
         <View style={styles.container} >
             <Text style={styles.countScore}>{props.scoreUser}</Text>
@@ -23,7 +19,6 @@ const ScoreBoard = (props) => {
 }
 
 const styles = StyleSheet.create( {
-
     container: {
         width: W,
         height: H / 5,
