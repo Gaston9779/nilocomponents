@@ -19,7 +19,9 @@ var NiloButton = function NiloButton(props) {
   return /*#__PURE__*/_react.default.createElement(_reactNative.Pressable, {
     style: props.style,
     onPress: handleClick
-  }, /*#__PURE__*/_react.default.createElement(_reactNative.Text, null, props.buttonText));
+  }, /*#__PURE__*/_react.default.createElement(_reactNative.Text, {
+    style: props.styleText
+  }, props.buttonText));
 };
 
 var _default = NiloButton;

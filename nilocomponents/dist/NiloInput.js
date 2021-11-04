@@ -23,6 +23,7 @@ var NiloInput = function NiloInput(props) {
   return /*#__PURE__*/_react.default.createElement(_reactNative.TextInput, {
     style: props.style,
     value: props.value,
+    placeholder: props.placeholder,
     onChangeText: handleChange
   });
 };

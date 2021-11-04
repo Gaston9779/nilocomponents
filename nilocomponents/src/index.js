@@ -5,7 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import ScoreBoard from './components/ScoreBoard'
 import NiloCards from './components/NiloCards'
 import NiloInput from './components/NiloInput';
+import App from './App';
 import { StyleSheet, Dimensions, Pressable, Image, View } from 'react-native'
+import MorraLogic  from './components/MorraLogic';
 
 
 const H = Dimensions.get( 'window' ).height
@@ -13,14 +15,19 @@ const W = Dimensions.get( 'window' ).width
 
 const change = (e) =>{
   console.log(e)
+  let a = new MorraLogic()
+  console.log(a.game("paper"))
 }
 ReactDOM.render(
   <React.StrictMode>
-    <View style={{flexDirection:'row', width: W, justifyContent: 'space-around', left:0 }}>
+    <App />
+    <MorraLogic />
+    <Pressable onPress={change} />
+    {/* <View style={{flexDirection:'row', width: W, justifyContent: 'space-around', left:0 }}>
       <NiloCards  />
       <NiloCards  />
       <NiloCards  />
-      </View>
+      </View> */}
   </React.StrictMode>,
   document.getElementById( 'root' )
 );

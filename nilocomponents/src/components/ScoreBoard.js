@@ -39,7 +39,7 @@ const styles = StyleSheet.create( {
     countScore: {
         borderWidth: 1,
         fontSize: 50,
-        fontWeight: 800
+        fontWeight: '800'
     }
 } )
 export default ScoreBoard;
