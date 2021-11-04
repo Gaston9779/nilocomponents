@@ -17,12 +17,12 @@ var H = _reactNative.Dimensions.get('window').height;
 
 var W = _reactNative.Dimensions.get('window').width;
 
-var ScoreBoard = function ScoreBoard() {
+var ScoreBoard = function ScoreBoard(props) {
   return /*#__PURE__*/_react.default.createElement(_reactNative.View, {
     style: styles.container
   }, /*#__PURE__*/_react.default.createElement(_reactNative.Text, {
     style: styles.countScore
-  }, "0"), /*#__PURE__*/_react.default.createElement(_reactNative.View, null, /*#__PURE__*/_react.default.createElement(_NiloButton.default, {
+  }, props.scoreUser), /*#__PURE__*/_react.default.createElement(_reactNative.View, null, /*#__PURE__*/_react.default.createElement(_NiloButton.default, {
     style: styles.buttonNav,
     buttonText: 'ScoreBoard'
   }), /*#__PURE__*/_react.default.createElement(_NiloButton.default, {
@@ -30,7 +30,7 @@ var ScoreBoard = function ScoreBoard() {
     buttonText: 'Try Again'
   })), /*#__PURE__*/_react.default.createElement(_reactNative.Text, {
     style: styles.countScore
-  }, "0"));
+  }, props.scoreCPU));
 };
 
 var styles = _reactNative.StyleSheet.create({

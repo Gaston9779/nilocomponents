@@ -13,7 +13,7 @@ const NiloButton = (props) => {
         style={props.style}
         onPress={handleClick}
         >
-            <Text>{props.buttonText}</Text>
+            <Text style={props.styleText}>{props.buttonText}</Text>
 
         </Pressable>
     )
