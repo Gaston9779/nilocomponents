@@ -3,7 +3,7 @@ export default class LocalStorage {
 
     addData = (key, data) => {
         try {
-            let savedData = this.getData.push(data)
+            let savedData = this.getData.push(data) || [data]
             localStorage.setItem(key, JSON.stringify(savedData))
             console.log("local storage updated")
         } catch (error) {

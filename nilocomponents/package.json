@@ -56,10 +56,13 @@
   },
   "main": "dist/index.js",
   "private": false,
-  "files": [ "dist", "README.md" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "type": "module",
   "repository": {
-      "type": "git",
-      "url": "git@github.com:Gaston9779/nilocomponents.git"
+    "type": "git",
+    "url": "git@github.com:Gaston9779/nilocomponents.git"
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button,Pressable, View, Text, Image } from 'react-native'
+import { Pressable, Text } from 'react-native'
 
 
 const NiloButton = (props) => {
@@ -9,12 +9,11 @@ const NiloButton = (props) => {
     }
 
     return (
-        <Pressable 
-        style={props.style}
-        onPress={handleClick}
+        <Pressable
+            style={props.style}
+            onPress={handleClick}
         >
             <Text style={props.styleText}>{props.buttonText}</Text>
-
         </Pressable>
     )
 }
