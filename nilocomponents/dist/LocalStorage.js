@@ -15,17 +15,17 @@ var LocalStorage = function LocalStorage() {
   _classCallCheck(this, LocalStorage);
 
   _defineProperty(this, "getData", function (key) {
-    return JSON.parse(localStorage.getItem(key)) || null;
+    return JSON.parse(localStorage.getItem(key)) || false;
   });
 
   _defineProperty(this, "addData", function (key, data) {
     try {
-      var savedData = _this.getData.push(data);
-
+      var savedData = _this.getData(key) || [];
+      savedData.push(data);
       localStorage.setItem(key, JSON.stringify(savedData));
       console.log("local storage updated");
     } catch (error) {
-      console.log("local storage updated");
+      console.log(error);
     }
   });
 };

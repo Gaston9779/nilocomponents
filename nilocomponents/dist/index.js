@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "LocalStorage", {
+  enumerable: true,
+  get: function get() {
+    return _LocalStorage.default;
+  }
+});
 Object.defineProperty(exports, "MorraLogic", {
   enumerable: true,
   get: function get() {
@@ -38,10 +44,12 @@ var _NiloButton = _interopRequireDefault(require("./NiloButton"));
 
 var _ScoreBoard = _interopRequireDefault(require("./ScoreBoard"));
 
-var _MorraLogic = _interopRequireDefault(require("./MorraLogic.mjs"));
+var _MorraLogic = _interopRequireDefault(require("./MorraLogic.js"));
 
 var _NiloCards = _interopRequireDefault(require("./NiloCards"));
 
 var _NiloInput = _interopRequireDefault(require("./NiloInput"));
+
+var _LocalStorage = _interopRequireDefault(require("./LocalStorage"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

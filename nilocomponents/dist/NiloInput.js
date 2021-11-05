@@ -11,10 +11,8 @@ var _reactNative = require("react-native");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var H = _reactNative.Dimensions.get('window').height;
-
-var W = _reactNative.Dimensions.get('window').width;
-
+// const H = Dimensions.get('window').height
+// const W = Dimensions.get('window').width
 var NiloInput = function NiloInput(props) {
   var handleChange = function handleChange(e) {
     props.callback(e);
@@ -26,25 +24,24 @@ var NiloInput = function NiloInput(props) {
     placeholder: props.placeholder,
     onChangeText: handleChange
   });
-};
+}; // const styles = StyleSheet.create({
+//     inputText: {
+//         backgroundColor: 'white',
+//         height: H / 20,
+//         width: W / 10,
+//         textAlign: 'center',
+//         shadowColor: "#000",
+//         borderRadius: 10,
+//         shadowOffset: {
+//             width: 0,
+//             height: 2,
+//         },
+//         shadowOpacity: 0.25,
+//         shadowRadius: 3.84,
+//         elevation: 5,
+//     }
+// })
 
-var styles = _reactNative.StyleSheet.create({
-  inputText: {
-    backgroundColor: 'white',
-    height: H / 20,
-    width: W / 10,
-    textAlign: 'center',
-    shadowColor: "#000",
-    borderRadius: 10,
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5
-  }
-});
 
 var _default = NiloInput;
 exports.default = _default;

@@ -1,6 +1,6 @@
 {
   "name": "nilocomponents",
-  "version": "0.2.3",
+  "version": "0.2.8",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.15.0",
